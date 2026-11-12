@@ -1,0 +1,14 @@
+# Mirrors the existing `dl` env. PyTorch is installed with pip for CUDA 12.8
+# (RTX 50-series needs it):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+name: dl
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - h5py
+  - pyyaml
+  - matplotlib
+  - pytest
+  - ruff
+  - pip
